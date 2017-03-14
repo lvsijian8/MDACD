@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+
+<script type="text/javascript">
+	function showId(id){
+		var wenzi = document.getElementById('wenzi');
+		clear();
+		switch(id){
+			case 1: wenzi.innerHTML = "地址：广东省东莞市麻涌镇沿江西一路7号<br><br> 邮编：523133<br><br>东莞校区与广州校区、中山大学南校区之间每天都有校车直达。<br><br>东莞校区有中大新华学院（东莞校区）总站，现有611（东莞）路公交车，2014年10月28日起增加广州第三巴士的广368路中大新华学院（东莞校区）-广州夏园，可换乘BRT进入广州市区，广369路中大新华学院（东莞校区）-广州茅岗新村（可换乘地铁5号线文冲、大沙东、大沙地）。另外在学校不远的地方有616（东莞）和617（东莞）路前往广州开发区换乘B28、快28等线进入广州市区。";
+			Select(id);break;
+			case 2:
+			wenzi.innerHTML ='<p style="text-align:center;">联系我们</p><br>标题:<input type="text" style="width:100%;"><br>content:<textarea  name="word" rows="5" style="width:100%"></textarea><br><button style="float:right;margin:0 auto;">send</button> <br>';
+			Select(id);break;
+			case 3:
+			wenzi.innerHTML ='<p style="text-align:center;">联系我们</p><br>标题:<input type="text" style="width:100%;"><br>content:<textarea  name="word" rows="5" style="width:100%"></textarea><br><button style="float:right;margin:0 auto;">send</button> <br>';
+			Select(id);break;
+			case 4:
+			Select(id);wenzi.innerHTML ='<h1 align="center" style="font-size:38px">请我喝杯咖啡吧。</h1><p style="text-align:center;"><img src="images/AliPay.jpeg" width="300"></img>          <img src="images/WechatPay.png" width="300"></img></p>';break;
+			case 5:
+			Select(id);wenzi.innerHTML ='<h1 align="center" style="font-size:38px">请我喝杯咖啡吧。</h1><p style="text-align:center;"><img src="images/AliPay.jpeg" width="300"></img>          <img src="images/WechatPay.png" width="300"></img></p>';break;
+			case 6:
+			Select(id);wenzi.innerHTML ='<p>友情链接</p><br><p><a href="http://www.sysu.edu.cn" target="_blank">中山大学		</a><a href="http://www.xhspoc.com/" target="_blank">博学书院</a></p><br><p><a href="http://www.harvard.edu" target="_blank">中大新华MOOC荟萃平台		</a><a href="http://www.xhsysu.cn/web/easytoget/freelib/" target="_blank">全球免费开放的电子图书馆    </a></p><br>';break;
+			
+		}
+	}
+	
+	function clear(){
+		
+		for(var i = 1;i <= 6;i++){
+			document.getElementById(i).style.backgroundColor="#bfbfbf";
+			document.getElementById(i+""+i+"").style.backgroundColor="#bfbfbf";
+		}
+	}
+	function Select(id){
+		document.getElementById(id).style.backgroundColor="#FFC";
+		document.getElementById(id+""+id+"").style.backgroundColor="#ffc";
+	}
+	
+	 
+</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" href="styles/main.css"/>
+
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+	<div class="inner">
+		<a href="index.html" class="logo"><font size="+4">MDACD</font></a>
+		<nav id="nav">
+			<a href="index_cn.html">主页</a>
+			<a href="Equipment_cn.html">设备</a>
+			<a href="Examination_cn.html">考试</a>
+            <a href="About_us_cn.html">关于</a>
+            <a href="About_us.html">ENG</a>
+		</nav>
+		<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+	</div>
+</header>
+
+<!-- Banner -->
+<div id="banner_cn">
+  <h1>欢迎来到 MDACD</h1>
+</div>
+
+<!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+<div>
+<div class="biaoti">
+<h1 align="center" style="font-size:38px">我们是谁</h1>
+</div>
+
+<div class="jieshao">
+<p>实验室采用移动技术，包括：LBS，二维码，Wifi，RFID，彩色码，全息投影。<p>
+硕士从经验，培训到应用全系列的教学系统优势。<p>
+了解各种移动商务模式应用和扩展的现场;
+</div>
+<div class="biaoti">
+<h1 align="center" >相信我们可以改变世界</h1>
+</div>
+</div>
+
+<script type="text/javascript">
+Select(1);
+</script>
+
+<div class="test1">
+
+<div id="neirong">
+<ul>
+<li id="11" style="background:#FFC" > <img id="1" onMouseOver="showId(1)"  style="background:#FFC" class="datubiao" src="images/1127023.png"/></li>
+<li id="22"> <img id="2" onMouseOver="showId(2)"class="datubiao" src="images/1126982.png"/></li>
+<li id="33"> <img id="3" onMouseOver="showId(3)"class="datubiao" src="images/1127013.png"/></li>
+<li id="44"> <img id="4" onMouseOver="showId(4)"class="datubiao" src="images/1127026.png"/></li>
+<li id="55"> <img id="5" onMouseOver="showId(5)"class="datubiao" src="images/1127075.png"/></li>
+<li id="66"> <img id="6" onMouseOver="showId(6)"class="datubiao" src="images/1127049.png"/></li>
+</ul>
+</div>
+<div id="wenzi">
+<p>地址：广东省东莞市麻涌镇沿江西一路7号<p>
+邮编：523133<p>
+东莞校区与广州校区、中山大学南校区之间每天都有校车直达。
+东莞校区有中大新华学院（东莞校区）总站，现有611（东莞）路公交车，2014年10月28日起增加广州第三巴士的广368路中大新华学院（东莞校区）-广州夏园，可换乘BRT进入广州市区，广369路中大新华学院（东莞校区）-广州茅岗新村（可换乘地铁5号线文冲、大沙东、大沙地）。另外在学校不远的地方有616（东莞）和617（东莞）路前往广州开发区换乘B28、快28等线进入广州市区。
+</div>
+
+</div>
+
+
+<div class="test2">
+
+
+<div id="footerjj">
+<p align="center" style=" font-size:12px ;color:#FFF;letter-spacing:5px;" >VIEW GOOGLE MAP</p>
+
+<ul>
+<li> <img class="xiaotubiao" src="images/shape8.png"/></li>
+<li> <img class="xiaotubiao" src="images/instagerm_icon.png"/></li>
+<li> <img class="xiaotubiao" src="images/be.png"/></li>
+<li> <img class="xiaotubiao" src="images/goo.png"/></li>
+<li> <img class="xiaotubiao" src="images/shape164.png"/></li>
+<li> <img class="xiaotubiao" src="images/icon5.png"/></li>
+</ul>
+</div>
+</div>
+
+
+
+</body>
+</html>

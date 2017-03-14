@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Under Construction</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="The free Under-Construction Iphone web template, Andriod web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="./css/style.css" media="all" rel="stylesheet"  type="text/css">
+</head>
+<body>
+<div class="header">
+<div class="wrap">
+	<div class="header-logo">
+		<a href="index.html"><img src="./images/header-logo.png" alt=""> </a>
+	</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="content">
+<div class="wrap">
+ 	<div class="cont-main">
+		<h2>Under Construction</h2>
+		
+ 	<div class="cont-h">
+ 		<h1>MDACD</h1>
+	</div>
+	<div class="search-form">
+	<div class="search">
+		<h3>Subscibe to Get Notified When Under-Construction Launches:</h3>
+		<form method="post" id="register" action="contact-post.html">
+	<div class="table-form">
+		
+				<input type="text" class="textbox" id="UserEmail" name="userEmail" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+	</div>
+	<div class="contact-form">
+		<input type="submit" value="Submit" class="form-button" id="btn-submit" />
+	</div>
+	</form>
+	<div id="UserEmailmsg"></div>
+	</div>
+	</div>
+	<div class="cont-link">
+		<p>follow us on:<a>facebook </a>& <a>twitter</a></p>
+	</div>
+	<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="footer">
+<div class="wrap">
+	<div class="f-copyrights">
+	<p>we will use your email address to send updates to the launch of Under-Construct</p>
+	</div>
+	<div class="clear"></div>
+
+</div>
+</div>
+</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+   <script type="text/JavaScript">
+
+// prepare the form when the DOM is ready 
+$(document).ready(function() { 
+		
+		$('#btn-submit').click(function() {  
+				
+				$(".error").hide();
+				var hasError = false;
+				var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+				//var emailblockReg =  /^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!aol.com)([\w-]+\.)+[\w-]{2,4})?$/;
+
+				var emailaddressVal = $("#UserEmail").val();
+				if(emailaddressVal == '') {
+					$("#UserEmailmsg").after('<div class="error">Please enter your email address.</div>');
+					hasError = true;
+				} else if(!emailReg.test(emailaddressVal)) {	
+					$("#UserEmailmsg").after('<div class="error">Enter a valid email address.</div>');
+					hasError = true;
+				} else if(!emailblockReg.test(emailaddressVal)) {	
+					$("#UserEmailmsg").after('<div class="error">No gmail, hotmail or yahoo.</div>');
+					hasError = true;
+				} 
+		
+				if(hasError == true) { return false; }
+				else {
+					$("#UserEmailmsg").after('<div class="error">Email accepted.</div>');
+					return false;
+				}
+	});	
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+
+<script type="text/javascript">
+	function showId(id){
+		var wenzi = document.getElementById('wenzi');
+		clear();
+		switch(id){
+			case 1: wenzi.innerHTML = "Address: Guangdong Province, Dongguan City, Ma Yongzhen along the West all the way on the 7th <br><br><br> Zip code:523133<br><br>Dongguan campus and Guangzhou campus, Zhongshan University campus every day between the South School bus direct.<br><br>Dongguan Campus Zhongda Xinhua College (Dongguan Campus) terminus, the existing 611 (Dongguan) Road bus, October 28, 2014 from Guangzhou to increase the third bus 368 Canton Road, Xinhua University(Dongguan Campus) - Guangzhou Summer (Can be transferred to Metro Line 5, Wenchong, Dashadong and Dashadi), and transfer to BRT to enter the urban area of GuangZhou, GuangZhong Road, ZhongHua Xinhua University (Dongguan Campus). Also in the school not far from the place 616 (Dongguan) and 617 (Dongguan) Road to Guangzhou Development Zone, B28, fast 28 lines into the Guangzhou urban area.";
+			Select(id);break;
+			case 2:
+			wenzi.innerHTML ='<p style="text-align:center;">Tell us</p>theme:<input type="text" style="width:100%;"><br>content:<textarea  name="word" rows="5" style="width:100%"></textarea><br><button style="float:right;margin:0 auto;">send</button> <br>';
+			Select(id);break;
+			case 3:
+			wenzi.innerHTML ='<p style="text-align:center;">Tell us</p>theme:<input type="text" style="width:100%;"><br>content:<textarea  name="word" rows="5" style="width:100%"></textarea><br><button style="float:right;margin:0 auto;">send</button> <br>';
+			Select(id);break;
+			case 4:
+			Select(id);wenzi.innerHTML ='<h1 align="center" style="font-size:38px">Would you please have me a cup of coffee?</h1><p style="text-align:center;"><img src="images/AliPay_en.jpeg" width="300"></img>          <img src="images/WechatPay_en.png" width="300"></img></p>';break;
+			case 5:
+			Select(id);wenzi.innerHTML ='<h1 align="center" style="font-size:38px">Would you please have me a cup of coffee?</h1><p style="text-align:center;"><img src="images/AliPay_en.jpeg" width="300"></img>          <img src="images/WechatPay_en.png" width="300"></img></p>';break;
+			case 6:
+			Select(id);wenzi.innerHTML ='<p>Links</p><br><p><a href="http://www.sysu.edu.cn" target="_blank">Sun Yat - sen University</a></p><p><a href="http://www.xhspoc.com/" target="_blank">Learned academy</a></p><br><p><a href="http://www.xhspoc.com" target="_blank">ZDXH MOOC meta-platform</a></p><p><a href="http://www.xhsysu.cn/web/easytoget/freelib/" target="_blank">A free and open global electronic library</a></p><br>';break;
+			
+		}
+	}
+	
+	function clear(){
+		
+		for(var i = 1;i <= 6;i++){
+			document.getElementById(i).style.backgroundColor="#bfbfbf";
+			document.getElementById(i+""+i+"").style.backgroundColor="#bfbfbf";
+		}
+	}
+	function Select(id){
+		document.getElementById(id).style.backgroundColor="#FFC";
+		document.getElementById(id+""+id+"").style.backgroundColor="#ffc";
+	}
+	
+	 
+</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" href="styles/main.css"/>
+	
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+	<div class="inner">
+		<a href="index.html" class="logo"><font size="+4">MDACD</font></a>
+		<nav id="nav">
+			<a href="index.html">Home</a>
+			<a href="Equipment.html">Equipment</a>
+			<a href="Examination.html">Examination</a>
+            <a href="About_us.html">About</a>
+            <a href="About_us_cn.html">中文</a>
+		</nav>
+		<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+	</div>
+</header>
+
+<!-- Banner -->
+<div id="banner">
+  <h1>Welcome to MDACD</h1>
+</div>
+
+<!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+<div>
+<div class="biaoti">
+<h1 align="center" style="font-size:38px">Who are we?</h1>
+</div>
+
+<div class="jieshao">
+<p>The laboratory uses mobile technology, including: LBS, two-dimensional code, Wifi, RFID, color code, holographic projection.</p>
+<p>Master from experience, training to the application of the full range of teaching system advantages.</p>
+<p>Understand the scene of a variety of mobile business model applications and extensions;</p>
+</div>
+<div class="biaoti">
+<h1 align="center" >We believe we can change the world </h1>
+</div>
+</div>
+
+<script type="text/javascript">
+Select(1);
+</script>
+
+<div class="test1">
+
+<div id="neirong">
+<ul>
+<li id="11" style="background:#FFC" > <img id="1" onMouseOver="showId(1)"  style="background:#FFC" class="datubiao" src="images/1127023.png"/></li>
+<li id="22"> <img id="2" onMouseOver="showId(2)"class="datubiao" src="images/1126982.png"/></li>
+<li id="33"> <img id="3" onMouseOver="showId(3)"class="datubiao" src="images/1127013.png"/></li>
+<li id="44"> <img id="4" onMouseOver="showId(4)"class="datubiao" src="images/1127026.png"/></li>
+<li id="55"> <img id="5" onMouseOver="showId(5)"class="datubiao" src="images/1127075.png"/></li>
+<li id="66"> <img id="6" onMouseOver="showId(6)"class="datubiao" src="images/1127049.png"/></li>
+</ul>
+</div>
+<div id="wenzi">
+Address: Guangdong Province, Dongguan City, Ma Yongzhen along the West all the way on the 7th <br><br><br> Zip code:523133<br><br>Dongguan campus and Guangzhou campus, Zhongshan University campus every day between the South School bus direct.<br><br>Dongguan Campus Zhongda Xinhua College (Dongguan Campus) terminus, the existing 611 (Dongguan) Road bus, October 28, 2014 from Guangzhou to increase the third bus 368 Canton Road, Xinhua University(Dongguan Campus) - Guangzhou Summer (Can be transferred to Metro Line 5, Wenchong, Dashadong and Dashadi), and transfer to BRT to enter the urban area of GuangZhou, GuangZhong Road, ZhongHua Xinhua University (Dongguan Campus). Also in the school not far from the place 616 (Dongguan) and 617 (Dongguan) Road to Guangzhou Development Zone,B28, fast 28 lines into the Guangzhou urban area.
+</div>
+
+</div>
+
+
+<div class="test2">
+
+
+<div id="footerjj">
+<p align="center" style=" font-size:12px ;color:#FFF;letter-spacing:5px;" >VIEW GOOGLE MAP</p>
+
+<ul>
+<li> <img class="xiaotubiao" src="images/shape8.png"/></li>
+<li> <img class="xiaotubiao" src="images/instagerm_icon.png"/></li>
+<li> <img class="xiaotubiao" src="images/be.png"/></li>
+<li> <img class="xiaotubiao" src="images/goo.png"/></li>
+<li> <img class="xiaotubiao" src="images/shape164.png"/></li>
+<li> <img class="xiaotubiao" src="images/icon5.png"/></li>
+</ul>
+</div>
+</div>
+
+
+
+</body>
+</html>
